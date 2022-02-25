@@ -13,7 +13,7 @@ let allowedList = [
 btnCheck.addEventListener("click", function(){
     let allowed = false;
     for(let i = 0; i < allowedList.length; i++){
-        if(allowedList[i] == inputEmail.value){
+        if(allowedList[i] == inputEmail.value.toLowerCase()){
             allowed = true;
         }
     }
